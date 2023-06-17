@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  /* box-sizing: border-box;  */
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #0080ff;
+}
+h2, h4{
+    font-family: 'Roboto';
+    color: white;
+}
+.search{
+    display: block;
+    background-color: white;
+    border-radius: 4px;
+    width: 250px;
+    height: 40px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 40px;
+}
+
+
+.container{
+    text-align: center;
+}
+.search-field{
+    width: 215px;
+    height: 30px; 
+    padding: 5px 20px 5px 15px;
+    color: black;
+    border: none !important; 
+    border-radius: 4px;
+	vertical-align	: middle;
+    font-size: 12px;
+    font-family: 'Roboto';
+    z-index: 0 !important;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+.search-field:focus  {
+    border: none;
+    outline: none ;
+}
+.search-field::placeholder{
+    font-size: 12px;
+}
+.list-cantainer{
+    width: 250px;
+    text-align: center;
+   z-index: 0;
+}
+.repositories-list{
+    background-color: white;
+    width: 250px;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+.repositories-list li:hover{
+    border-radius: 4px;
+    background-color: #FAF3F3 !important;
+    
+}
+.repositories-list li{
+    list-style: none;
+    padding: 5px 0px 5px 15px;
+    border-radius: 4 !important;
+    font-size: 10px;
+    height: 15px;
+    display: flex;
+    /* justify-content: center; */
+    cursor: pointer;
+}
+li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon{
+    height: 10px;
+    width: 10px;
+
+}
+
+.added-repositories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+.added-repositories li{
+    width: 255px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 0px 0px 0px 10px;
+}
+a{
+    text-decoration: none !important;  /* Убрать подчеркивание */
+    color: black !important;  /* Изменить цвет ссылки на черный */
+    cursor: default;  /* Установить курсор по умолчанию */
+    pointer-events: none;
+    text-align: left;
+    color: black !important
+       
+}
+.added-repositories li:hover {
+    text-decoration: none;  /* Убрать подчеркивание при наведении */
+  }
+p{
+    margin: 0;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.remove-button{
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer; 
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 40px;
+    background-color: red;
+}
+.remove-button::after{
+content: 'x';
+color: white
+
+}
